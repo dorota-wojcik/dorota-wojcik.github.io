@@ -1,0 +1,602 @@
+/*
+Colours:
+Background Grey:  #333;
+White Text:       white;
+Gold Highlight:   #fde11c;
+*/
+
+/* Reset */
+body, h1, h2, h3, p, ul, li {
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* Element Styles */
+
+body {
+	background-color: #333;
+	color: #fff;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 1.5;
+	margin: 0 auto 1em;
+	max-width: 1200px;
+	padding: 0 1em;
+}
+
+a {
+	color: #fde11c;
+	outline: 0;
+	text-decoration: none;
+}
+
+div.divider {
+	border-style: solid;
+	border-width: 1px;
+	border-top-color: #111;
+	border-bottom-color: #666;
+	border-left-color: #222;
+	border-right-color: #222;
+	height: 0px;
+	margin: 1em auto;
+	width: 75%;
+}
+
+img {
+	border: 0;
+	max-width: 100%;
+}
+
+/* IE7 doesn't adjust the image width correctly if max-width is defined and the image is within a table */
+*table img {
+	max-width: 600px;
+}
+
+h1, h2, h3 {
+	color: #fde11c;
+	font-size: 1.4em;
+	margin-bottom: 0.5em;
+	text-shadow: 1px 1px 3px #111;
+}
+
+h1 {
+	margin-bottom: 1em;
+	margin-top: 2.5em;
+	text-align: center;
+}
+
+h2 {
+	text-align: left;
+}
+
+h2.sub {
+	margin-top: 1.5em;
+}
+
+h3.model {
+	margin: 1em 0 -0.5em;
+	text-align: center;
+}
+
+h3.model.first {
+	margin-top: 0;
+}
+
+p {
+	margin: 0.75em 0;
+}
+
+ul {
+	list-style: none;
+	white-space: nowrap;
+}
+
+/* Class Styles */
+.half-panel {
+	float: left;
+	margin: 0 2.5%;
+	width: 45%;
+}
+
+.half-panel.first {
+	margin: 0 2.5% 0 0;
+	width: 47.5%;
+}
+
+.half-panel.second {
+	margin: 0 0 0 2.5%;
+	width: 47.5%;
+}
+
+.right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.highlight {
+	color: #fde11c;
+}
+
+.title {
+	border-bottom: 2px solid #fde11c;
+	padding: 0 1.25em 3px;
+}
+
+.title.left {
+	padding-left: 0.25em;
+	padding-right: 1.75em;
+}
+
+/* ie7 inline block fix - http://community.sitepoint.com/t/inline-block-workaround-for-ie7-list-items/7285 */
+*+html ul.nav > li {
+	display: inline
+}
+
+div.separator {
+	height: 1.5em;
+}
+
+/* Languages */
+
+div.lang {
+	margin-right: 1em;
+	position: absolute;
+	right: 0;
+}
+
+div.lang > span {
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	display: inline-block;
+	margin-left: 1.6em;
+	min-height: 12px;
+	padding-left: 24px;
+}
+
+div.lang > span.gb {
+	background-image: url('images/gb-12.png');
+}
+
+div.lang > span.pl {
+	background-image: url('images/pl-12.png');
+}
+
+div.lang a {
+	color: white;
+}
+
+/* Image Frame */
+
+img.frame {
+	border: 2px solid #111;
+
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+/* Introduction */
+
+div.intro {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+div.intro p.logo {
+	margin-bottom: 3em;
+}
+
+div.intro table {
+	margin: 0 auto;
+}
+
+div.intro td {
+	line-height: 1em;
+	padding: 0.2em;
+	text-align: left;
+	vertical-align: middle;
+}
+
+div.intro td.separator {
+	width: 3em;
+}
+
+div.intro td.welcome a {
+	color: white;
+	font-size: 1.2em;
+}
+
+/* Banner */
+
+div.banner {
+	background-image: url( 'images/top-banner-hair.png' );
+	background-repeat: no-repeat;
+	background-position: top right;
+	margin-top: 4px;
+	padding-top: 48px;
+	text-align: center;
+}
+
+/* Navigation */
+
+ul.nav {
+	border-bottom: 2px solid #fde11c;
+	display: inline-block;
+	margin-bottom: 1em;
+	margin-left: 1em;
+	padding: 0 0.75em 0.3em;
+	vertical-align: bottom;
+}
+
+ul.nav > li {
+	background-position: 0 -16px;
+	display: inline-block;
+	margin: 0 0.6em;
+	text-align: left;
+}
+
+ul.nav a,
+div.gallery-navigation a {
+	color: white;
+	text-shadow: 1px 1px 3px #111;
+}
+
+/* Content */
+
+div.panel {
+	clear: both;
+}
+
+div.panel > div.wide {
+	width: 60%;
+}
+
+div.panel > div.narrow {
+	width: 35%;
+}
+
+div.panel > div.left {
+	float: left;
+}
+
+div.panel > div.right {
+	float: right;
+}
+
+/* About Me */
+
+.about-me {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 4%;
+
+	*display: inline;
+	*zoom: 1;
+}
+
+.about-me.first {
+	margin-left: 0;
+}
+
+.about-me.narrow.last {
+	display: none;
+}
+
+.about-me p {
+	margin-bottom: 1.25em;
+}
+
+/* Education */
+
+div.education {
+	font-size: 0.9em;
+}
+
+div.education > p.provider {
+	margin: 0;
+	text-transform: uppercase;
+}
+
+div.education > p.location {
+	float: right;
+	margin: 0 0 0 0.5em;
+	text-transform: uppercase;
+}
+
+div.education > p.description {
+	clear: both;
+	margin: 0 0 1em 0;
+	padding-left: 2em;
+}
+
+/* Testimonials */
+
+.testimonial {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.testimonial > p {
+	font-style: italic;
+}
+
+.testimonial .divider {
+	width: 80%;
+}
+
+.testimonial .author {
+	color: #fde11c;
+	line-height: 1em;
+	margin-bottom: 1.5em;
+	margin-left: -2em;
+	text-align: right;
+	text-shadow: 1px 1px 3px #111;
+}
+
+.testimonial .rating {
+	color: #fde11c;
+	font-size: 1.2em;
+	letter-spacing: 0.1em;
+	padding-left: 2em;
+}
+
+/* Services */
+
+table.services tr.heading td {
+	color: #fde11c;
+	font-weight: bold;
+	text-shadow: 1px 1px 3px #111;
+}
+
+table.services tr.heading.sub td {
+	padding-top: 1em;
+}
+
+table.services td.price {
+	text-align: right;
+	white-space: nowrap;
+}
+
+div.promotion {
+	color: #fde11c;
+	font-size: 1.2em;
+	text-align: center;
+	text-shadow: 1px 1px 3px #111;
+}
+
+div.products {
+	text-align: center;
+}
+
+div.products img {
+	margin: 1em 1em;
+}
+
+div.services-contact {
+	font-size: 13pt;
+	margin-top: 2em;
+	margin-bottom: 4em;
+	text-align: center;
+}
+
+span.service-poa-description {
+	float: left;
+	width: 52%;
+}
+
+span.service-poa {
+	float: right;
+	width: 47%;
+	text-align: right;
+}
+
+/* Gallery */
+
+div.gallery {
+	margin: 0 auto;
+	max-width: 1000px;
+	text-align: center;
+}
+
+div.gallery p.introduction {
+	display: inline-block;
+	margin-top: 0;
+	text-align: left;
+}
+
+div.gallery img {
+	margin: 0.35em
+}
+
+div.gallery-navigation {
+	text-align: center;
+	white-space: nowrap;
+}
+
+div.gallery-navigation > div {
+	display: inline-block;
+	font-size: 1em;
+	padding: 0 0.8em;
+	vertical-align: bottom;
+
+	*display: inline;
+	*zoom: 1;
+}
+
+div.gallery-navigation span {
+	display: block;
+	padding: 20px 0 13px;
+}
+
+/* Front Gallery */
+
+div.gallery.front > div {
+	float: left;
+	text-align: left;
+	margin: 0.75% 1%;
+}
+
+div.gallery.front img {
+	margin: 0;
+	vertical-align: top;
+}
+
+/* *width is for IE7, which loses accuracy when working with fractional percentages */
+
+div.gallery.front .first {
+	width: 47.8%;
+	*width: 47%;
+}
+
+div.gallery.front .second,
+div.gallery.front .third,
+div.gallery.front .sixth,
+div.gallery.front .seventh {
+	width: 23.1%;
+	*width: 23%;
+}
+
+div.gallery.front .fourth {
+	clear: both;
+	width: 28.1%;
+	*width: 28%;
+}
+
+div.gallery.front .fifth,
+div.gallery.front .eighth {
+	width: 42.8%;
+	*width: 42%;
+}
+
+div.gallery.front > div.logo {
+	margin: -0.75% 0 3em 10%;
+	position: relative;
+	width: 10%;
+}
+
+div.gallery.front > div.logo > img {
+	position: absolute;
+	bottom: 0;
+}
+
+/* Contact */
+
+div.contact-introduction {
+	margin: 0 auto;
+	max-width: 40em;
+	text-align: center;
+}
+
+div.contact-detail {
+	line-height: 2em;
+	text-align: center;
+}
+
+/* Footer */
+
+div.footer {
+	border-top: 2px solid #fde11c;
+	clear: both;
+	color: white;
+	font-size: 0.8em;
+	margin-top: 3em;
+	padding-top: 0.5em;
+	position: relative;
+	text-align: center;
+}
+
+/* Less than 800px */
+
+@media screen and (max-width: 800px) {
+	.about-me {
+		display: block;
+		margin-left: 0;
+	}
+
+	/* When displaying vertically, hide the first image and reveal the previously hidden last image */
+	.about-me.narrow.first {
+		display: none;
+	}
+
+	.about-me.narrow.last {
+		display: block;
+	}
+
+	div.panel > div.wide,
+	div.panel > div.narrow {
+		width: 100%;
+	}
+
+	div.panel > div.left,
+	div.panel > div.right {
+		float: none;
+	}
+
+	.half-panel {
+		float: none;
+		margin: 0 auto;
+		width: 90%;
+	}
+
+	.half-panel.first, .half-panel.second {
+		margin: 0 auto;
+		width: 90%;
+	}
+
+	table.services tr.heading.column td {
+		padding-top: 1em;
+	}
+
+	table.services tr.heading.column td.price {
+		visibility: hidden;
+	}
+
+	ul.nav {
+		padding: 0 0.4em 0.3em;
+	}
+
+	ul.nav > li {
+		margin: 0 0.4em;
+	}
+}
+
+/* Less than 640px */
+
+@media screen and (max-width: 640px) {
+	div.banner {
+		background-image: none;
+	}
+
+	div.lang {
+		margin-bottom: 1em;
+		position: inherit;
+		text-align: center;
+	}
+
+	ul.nav {
+		display: block;
+		margin-left: 0;
+	}
+
+	ul.nav > li {
+		display: block;
+	}
+
+	div.contact-detail {
+		font-size: 0.9em;
+	}
+
+	.testimonial .rating {
+		padding-left: 1.2em;
+	}
+
+	tr.service > td {
+		font-size: 0.9em;
+		padding: 0.2em 0;
+	}
+}

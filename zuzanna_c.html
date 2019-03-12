@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css?20160103" type="text/css" media="all" />
+	<link rel="shortcut icon" href="favicon.ico" />
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.gallery a')
+				.attr('rel', 'gallery')
+				.fancybox({
+					padding: 8,
+					openEffect: 'none',
+					closeEffect: 'none',
+					nextEffect: 'none',
+					prevEffect: 'none'
+				});
+		});
+	</script>
+	<title>Dorota Wójcik - Gallery</title>
+</head>
+<body>
+	<div class="banner">
+		<a href="index.html"><img src="images/logo.png"/></a>
+
+		<ul class="nav">
+			<li>| <a href="aboutme.html">Biography</a> |</li>
+			<li>| <a href="gallery.html">Gallery</a> |</li>
+			<li>| <a href="testimonials.html">Testimonials</a> |</li>
+			<li>| <a href="services.html">Services</a> |</li>
+			<li>| <a href="contactus.html">Contact</a> |</li>
+		</ul>
+	</div>
+
+	<h1><img src="images/zuzanna_c.png" alt="Zuzanna C." class="title"/></h1>
+
+	<div class="gallery">
+		<a href="gallery/7454.jpg"><img src="gallery/7454_thumb.jpg" class="frame"/></a>
+		<a href="gallery/7467.jpg"><img src="gallery/7467_thumb.jpg" class="frame"/></a>
+		<a href="gallery/7470.jpg"><img src="gallery/7470_thumb.jpg" class="frame"/></a>
+		<a href="gallery/7625.jpg"><img src="gallery/7625_thumb.jpg" class="frame"/></a>
+		<a href="gallery/7459.jpg"><img src="gallery/7459_thumb.jpg" class="frame"/></a>
+		<a href="gallery/7893.jpg"><img src="gallery/7893_thumb.jpg" class="frame"/></a>
+	</div>
+
+	<div class="divider"></div>
+	<div class="gallery-navigation">
+		<div><a href="monika_g.html"><img src="images/arrow-left.png"/></a></div>
+		<div><a href="gallery.html"><img src="images/arrow-up.png"/><span>Gallery</span></a></div>
+		<div><a href="anna_k.html"><img src="images/arrow-right.png"/></a></div>
+	</div>
+
+	<div class="footer">
+		<div class="lang">
+			<span class="gb"><a href="zuzanna_c.html">English</a></span>
+			<span class="pl"><a href="zuzanna_cpl.html">Polski</a></span>
+		</div>
+		<span>&copy; Copyright 2016 Dorota Wójcik</span>
+	</div>
+</body>
+</html>

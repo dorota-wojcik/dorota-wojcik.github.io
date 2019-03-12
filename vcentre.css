@@ -1,0 +1,15 @@
+html, body {
+	height: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+table.page-centre {
+	height: 100%;
+	width: 100%;
+}
+
+table.page-centre > tbody > tr > td {
+	text-align: center;
+	vertical-align: middle;
+}
