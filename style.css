@@ -408,6 +408,10 @@ div.gallery {
 	text-align: center;
 }
 
+div.gallery.narrow {
+	max-width: 950px;
+}
+
 div.gallery.wide {
 	max-width: 1020px;
 }
