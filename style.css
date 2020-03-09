@@ -132,6 +132,10 @@ ul {
 	padding-right: 1.75em;
 }
 
+.untranslated {
+	background-color: red;
+}
+
 /* ie7 inline block fix - http://community.sitepoint.com/t/inline-block-workaround-for-ie7-list-items/7285 */
 *+html ul.nav > li {
 	display: inline
@@ -340,6 +344,7 @@ div.education > p.description {
 
 .testimonial .rating {
 	color: #fde11c;
+	display: none;
 	font-size: 1.2em;
 	letter-spacing: 0.1em;
 	padding-left: 2em;
@@ -401,6 +406,10 @@ div.gallery {
 	margin: 0 auto;
 	max-width: 1000px;
 	text-align: center;
+}
+
+div.gallery.wide {
+	max-width: 1020px;
 }
 
 div.gallery p.introduction {
